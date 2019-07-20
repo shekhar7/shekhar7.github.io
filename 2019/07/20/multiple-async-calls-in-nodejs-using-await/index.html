@@ -14,7 +14,7 @@
 
     
         <meta name="description" content="To handle multiple calls in NodeJS, we can use Promise.all function.
-1const [call1Result, call2Result, call3Result] = await Promise.all( fetchDataProm">
+12345const [call1Result, call2Result, call3Result] = await Promise.all([  fetchDa">
     
 
     <!--Author-->
@@ -30,7 +30,7 @@
     <!--Open Graph Description-->
     
         <meta property="og:description" content="To handle multiple calls in NodeJS, we can use Promise.all function.
-1const [call1Result, call2Result, call3Result] = await Promise.all( fetchDataProm">
+12345const [call1Result, call2Result, call3Result] = await Promise.all([  fetchDa">
     
 
     <!--Open Graph Site Name-->
@@ -205,12 +205,17 @@
                         
 
 
-<a href="/tags/nodejs/">#nodejs</a> <a href="/tags/async/">#async</a> <a href="/tags/await/">#await</a> <a href="/tags/javascript/">#javascript</a> <a href="/tags/es6/">#es6</a> <a href="/tags/js/">#js</a>
+<a href="/tags/nodejs/">#nodejs</a> <a href="/tags/async/">#async</a> <a href="/tags/await/">#await</a> <a href="/tags/javascript/">#javascript</a> <a href="/tags/es6/">#es6</a> <a href="/tags/js/">#js</a> <a href="/tags/promise-all/">#promise-all</a>
 
 
                     
                 </div>
                 <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/nodejs/">nodejs</a>
+
                     
                 </div>
             
@@ -220,10 +225,11 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>To handle multiple calls in NodeJS, we can use Promise.all function.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [call1Result, call2Result, call3Result] = <span class="keyword">await</span> <span class="built_in">Promise</span>.all( fetchDataPromise, fetchAnotherDataPromise, fetchOneMoreDataPromise);</span><br></pre></td></tr></table></figure>
+                <p>To handle multiple calls in NodeJS, we can use <strong>Promise.all</strong> function.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [call1Result, call2Result, call3Result] = <span class="keyword">await</span> <span class="built_in">Promise</span>.all([</span><br><span class="line">  fetchDataPromise,</span><br><span class="line">  fetchAnotherDataPromise,</span><br><span class="line">  fetchOneMoreDataPromise</span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
 
 <p>In the above code, we are assuming there are 3 async calls, that will return a promise. Using the ES6 async-await feature, we can bind multiple calls into a single call.</p>
+<p>Promise.all function accepts any number of promises as array elements and returns the result in the same sequence as specified in the argument array.</p>
 <p>Do not forget to wrap the parent function as async function.</p>
 
 
