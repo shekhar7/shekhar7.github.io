@@ -13,8 +13,8 @@
     
 
     
-        <meta name="description" content="Welcome to the new Blog!
-This is good to  start">
+        <meta name="description" content="To handle multiple calls in NodeJS, we can use Promise.all function.
+1const [call1Result, call2Result, call3Result] = await Promise.all( fetchDataProm">
     
 
     <!--Author-->
@@ -29,12 +29,12 @@ This is good to  start">
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Welcome to the new Blog!
-This is good to  start">
+        <meta property="og:description" content="To handle multiple calls in NodeJS, we can use Promise.all function.
+1const [call1Result, call2Result, call3Result] = await Promise.all( fetchDataProm">
     
 
     <!--Open Graph Site Name-->
-        <meta property="og:site_name" content="The Alvo Blog">
+        <meta property="og:site_name" content="Data to Information">
 
     <!--Type page-->
     
@@ -57,7 +57,7 @@ This is good to  start">
 
     <!-- Title -->
     
-    <title>Multiple async calls in NodeJS using async await - The Alvo Blog</title>
+    <title>Multiple async calls in NodeJS using async await - Data to Information</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -115,7 +115,7 @@ This is good to  start">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">The Alvo Blog</a>
+            <a class="navbar-brand" href="/">Data to Information</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -220,8 +220,11 @@ This is good to  start">
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Welcome to the new Blog!</p>
-<p>This is good to  start</p>
+                <p>To handle multiple calls in NodeJS, we can use Promise.all function.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const [call1Result, call2Result, call3Result] = await Promise.all( fetchDataPromise, fetchAnotherDataPromise, fetchOneMoreDataPromise)</span><br></pre></td></tr></table></figure>
+
+<p>In the above code, we are assuming there are 3 async calls, that will return a promise. Using the ES6 async-await feature, we can bind multiple calls into a single call.</p>
+<p>Do not forget to wrap the parent function as async function.</p>
 
 
                 
